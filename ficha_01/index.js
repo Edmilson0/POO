@@ -134,7 +134,7 @@ function funcJ(){
     else{
         console.log("não o numero não é primo")
     }
-     
+    
     
   }
   // alinea K
@@ -190,7 +190,7 @@ function funcM(){
      // alinea N
 function funcN(){
     
-      let numero = parseInt(prompt("escreva um numero entre 100 e 999"))
+      let numero =(prompt("escreva um numero entre 100 e 999"))
      
       
         if ((numero.charAt(0))==(numero.charAt(2))) {
@@ -201,3 +201,38 @@ function funcN(){
         }
   }
 
+     // alinea O
+     function funcO(){
+    let aleatorio =parseInt (Math.random()*99) +1
+  
+  
+    let tentativas=0
+
+    while (tentativas<=10) {
+        let numero = parseInt(prompt("escreva um numero entre 1 a 100"))
+
+        if (numero > aleatorio) {
+            console.log("menor")
+           
+            
+        }else if (numero < aleatorio) {
+         console.log("maior")
+         
+        }
+       
+        else if(tentativas==10){
+         console.log("game over ")
+         break
+        }
+        else if(numero==aleatorio){
+            console.log("parabens acertaste no numero em "+tentativas+" tentativas")
+            break
+           }
+         tentativas++
+         console.log("tentativas "+tentativas)
+         console.log("ale "+aleatorio)
+    }
+ 
+    
+   
+    }
