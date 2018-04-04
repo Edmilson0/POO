@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+    <script src="ex03.js"></script>
+   
+    <title>ficha 6</title>
+    <style>
+        form{
+            background-color: aqua;
+            width: 50%;
+            left: 30%;
+        }
+        input{
+            width: 30%;
+          height: 30%;
+        }
+        table{
+            font-family: arial, sans-serif;
+             border-collapse: collapse;
+             width: 50%;
+        }
+        select{
+            width: 30%;
+          height: 30%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="formulario">
+
+        <div class="form-group">
+            <label for="Titulo">Titulo</label>
+            <input id="myTxt" maxlength="50" type="text" name="Titulo">
+        </div>
+
+        <div class="form-group">
+            <label for="Ano">Ano</label>
+            <input min="1900" max="2018" id="mynumber" type="number" name="Ano">
+
+        </div>
+
+        <div class="form-group">
+            <label for="genero">Genero</label>
+            <select name="genero" id="generos">
+
+                <option value="n definido">genero não definido</option>
+                <option value="Terror">Terror</option>
+                <option value="Romance ">Romance</option>
+                <option value="Animação">Animação</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Ação ">Ação</option>
+            </select>
+        </div>
+    </form>
+   
+    <input id="mybtn" class="btn" type="button" value="Submit">
+
+
+    <table id="tabela" class="table"></table>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

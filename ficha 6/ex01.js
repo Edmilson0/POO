@@ -1,6 +1,7 @@
 
 //colocar todo o codigo aqui
 window.onload=function(){
+    
 let myP=document.getElementById("myP")
 myP.innerHTML="bem vindo a minha pagina"
 
