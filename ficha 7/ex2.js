@@ -2,7 +2,7 @@ window.onload=function(){
 
     let mySu=document.getElementById("mySubmit")
 
-    mySu.addEventListener("click", function(){
+    mySu.addEventListener("click", function(event){
 
        let nome=document.getElementById("myNome")
        let telemovel=document.getElementById("myTel")
@@ -16,9 +16,13 @@ window.onload=function(){
        }
        else{
         alert("Erro")
+        event.preventDefault()
        }
+       
+       let data=new Data().toDateString()
        
       
     })
+    
     
 }
